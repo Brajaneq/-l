@@ -1,0 +1,38 @@
+{
+  "name": "testshoter",
+  "version": "1.0.0",
+  "description": "Discord bot that send content of questions on testportal.pl written in JavaScript",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node -r dotenv/config -r tsconfig-paths/register .",
+    "start:standalone": "ts-node -r dotenv/config -r tsconfig-paths/register . -- --standalone",
+    "start:dev": "ts-node-dev -r dotenv/config -r tsconfig-paths/register ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fhodun/testshoter.git"
+  },
+  "author": "Filip Hodun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fhodun/testshoter/issues"
+  },
+  "homepage": "https://github.com/fhodun/testshoter#readme",
+  "dependencies": {
+    "@typeit/discord": "^4.0.8",
+    "discord.js": "^12.5.1",
+    "inquirer": "^7.3.3",
+    "node-fetch": "^2.6.1",
+    "puppeteer": "^5.5.0"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^7.3.1",
+    "@types/node-fetch": "^2.5.7",
+    "@types/puppeteer": "^5.4.2",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.15.0",
+    "ts-node": "^9.1.1",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.1.3"
+  }
+}
